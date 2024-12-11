@@ -1,0 +1,29 @@
+/* Eliminar márgenes y padding globales */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fondo {
+  width: 100%;
+  height: 980px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-size: 200% 200%; /* Aumenta el tamaño del gradiente */
+  animation: gradiente-movimiento 5s infinite; /* Aplica la animación */
+}
+
+@keyframes gradiente-movimiento {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
